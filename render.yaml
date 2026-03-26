@@ -3,7 +3,7 @@ services:
     name: playwright-mcp
     runtime: docker
     dockerfilePath: ./Dockerfile.render
-    plan: standard
+    plan: free
     envVars:
       - key: PORT
         value: "8080"
