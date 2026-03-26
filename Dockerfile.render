@@ -43,4 +43,6 @@ COPY --chown=${USERNAME}:${USERNAME} packages/playwright-mcp/cli.js packages/pla
 
 EXPOSE 8080
 
-ENTRYPOINT ["node", "cli.js", "--headless", "--browser", "chromium", "--no-sandbox", "--port", "8080", "--host", "0.0.0.0", "--allowed-hosts", "*"]
+COPY --chown=${USERNAME}:${USERNAME} config.render.json ./config.json
+
+ENTRYPOINT ["node", "cli.js", "--headless", "--browser", "chromium", "--no-sandbox", "--port", "8080", "--host", "0.0.0.0", "--allowed-hosts", "*", "--config", "config.json"]
