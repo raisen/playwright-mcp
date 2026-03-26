@@ -1,0 +1,10 @@
+{
+  "browser": {
+    "contextOptions": {
+      "ignoreHTTPSErrors": true
+    }
+  },
+  "timeouts": {
+    "navigation": 30000
+  }
+}
