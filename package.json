@@ -28,5 +28,8 @@
     "@modelcontextprotocol/sdk": "^1.25.2",
     "@playwright/test": "1.59.0-alpha-1773608981000",
     "@types/node": "^24.3.0"
+  },
+  "dependencies": {
+    "undici": "^7.24.6"
   }
 }
